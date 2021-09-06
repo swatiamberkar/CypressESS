@@ -1,0 +1,27 @@
+{
+  "failOnStatusCode": false,
+  "pageLoadTimeout": 90000,
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "projectId": "eoaw6a",
+  "video": true,
+  "chromeWebSecurity": false,
+  "downloadsFolder": "cypress/downloads",
+
+  "env": {
+    "_cloudUrl": "https://cloud.pockethrms.com/",
+    "cloudUrl": "https://pockethrmsnext.azurewebsites.net/",
+    "_url": "https://greytrix.pockethrms.com/",
+    "url": "https://essstaging.azurewebsites.net/",
+    "username": "nileshgajare@live.com",
+    "userPass": "123456",
+    "toastWait": "5000",
+    "pastYear": "2020",
+    "currentYear": "2021",
+    "FinancialYear_From": "2021",
+    "FinancialYear_To": "2022"
+  }
+
+
+
+}

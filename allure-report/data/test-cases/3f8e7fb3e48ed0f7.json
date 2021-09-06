@@ -1,0 +1,52 @@
+{
+  "uid" : "3f8e7fb3e48ed0f7",
+  "name" : "Verify Validation - Enter Expense Type",
+  "fullName" : "Expense Type Verify Validations.Verify Validation - Enter Expense Type",
+  "historyId" : "61ea07e0a276489bff4093866ea5c387",
+  "time" : {
+    "start" : 1629358489030,
+    "stop" : 1629358494793,
+    "duration" : 5763
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: expected '[ <div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: expected '[ <div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'\n                    at eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:163:32)\n                    at itCallback (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:356:3)\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:380:32)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Validation - Enter Expense Type"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3f8e7fb3e48ed0f7.json",
+  "parameterValues" : [ ]
+}

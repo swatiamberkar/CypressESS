@@ -1,0 +1,52 @@
+{
+  "uid" : "41b73b73c3d44bb5",
+  "name" : "Verify Added Expense Type details",
+  "fullName" : "Expense Type Verify Save Functionality.Verify Added Expense Type details",
+  "historyId" : "96dce8c40603e3b5de6b1ac65eab49a4",
+  "time" : {
+    "start" : 1629358508491,
+    "stop" : 1629358518591,
+    "duration" : 10100
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:210:12)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Added Expense Type details"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "41b73b73c3d44bb5.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,52 @@
+{
+  "uid" : "93ea857ce5de29c4",
+  "name" : "Delete Expense Type",
+  "fullName" : "Expense Type Verify Delete Functionality.Delete Expense Type",
+  "historyId" : "26ab8ba897c87abba4b3a1a1cbed1a8a",
+  "time" : {
+    "start" : 1629358540972,
+    "stop" : 1629358548571,
+    "duration" : 7599
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:270:34)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "testMethod",
+    "value" : "Delete Expense Type"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "93ea857ce5de29c4.json",
+  "parameterValues" : [ ]
+}

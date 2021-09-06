@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629358488266' stop='1629358499929'>
+    <name>Expense Type Verify Validations</name>
+    <title>Expense Type Verify Validations</title>
+    <test-cases>
+        <test-case start='1629358488292' status='pending' stop='1629358488292'>
+            <name>Verify Validation - Select Buisness Unit.</name>
+            <title>Verify Validation - Select Buisness Unit.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629358488292' status='undefined'>
+            <name>Verify Validation - Select Buisness Unit.</name>
+            <title>Verify Validation - Select Buisness Unit.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629358488293' status='passed' stop='1629358489028'>
+            <name>Verify Validation - Select Buisness Value.</name>
+            <title>Verify Validation - Select Buisness Value.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629358489030' status='failed' stop='1629358494793'>
+            <name>Verify Validation - Enter Expense Type</name>
+            <title>Verify Validation - Enter Expense Type</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '[ &lt;div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '[ &lt;div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'
+                    at eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\integration\2_Expense\01_Expense%20Type.js:163:32)
+                    at itCallback (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\support\index.js:356:3)
+                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\support\index.js:380:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629358494796' status='broken' stop='1629358499895'>
+            <name>Verify Validation  - Expense Type Already Exists</name>
+            <title>Verify Validation  - Expense Type Already Exists</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:
+                
+                `&lt;input type="text" id="categoryName" required="" class="form-control form-control-sm" onblur="checkEXpenseTypeNew()" maxlength="50">`
+                
+                This element `&lt;input#categoryName.form-control.form-control-sm>` is not visible because its parent `&lt;div#DepartmentModal.modal>` has CSS property: `display: none`
+                
+                Fix this problem, or use `{force: true}` to disable error checking.
+                
+                https://on.cypress.io/element-cannot-be-interacted-with</message>
+                <stack-trace>CypressError: Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:
+                
+                `&lt;input type="text" id="categoryName" required="" class="form-control form-control-sm" onblur="checkEXpenseTypeNew()" maxlength="50">`
+                
+                This element `&lt;input#categoryName.form-control.form-control-sm>` is not visible because its parent `&lt;div#DepartmentModal.modal>` has CSS property: `display: none`
+                
+                Fix this problem, or use `{force: true}` to disable error checking.
+                
+                https://on.cypress.io/element-cannot-be-interacted-with
+                    at $Cy.ensureVisibility (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:148405:24)
+                    at runAllChecks (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:136083:14)
+                    at retryActionability (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:136137:16)
+                    at tryCatcher (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:13212:23)
+                    at Function.Promise.attempt.Promise.try (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:10486:29)
+                    at tryFn (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:153198:21)
+                    at whenStable (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:153236:12)
+                    at https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:152728:16
+                    at tryCatcher (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:13212:23)
+                    at Promise._settlePromiseFromHandler (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11147:31)
+                    at Promise._settlePromise (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11204:18)
+                    at Promise._settlePromise0 (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11249:10)
+                    at Promise._settlePromises (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11329:18)
+                    at Promise._fulfill (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11273:18)
+                    at https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:12887:46
+                From Your Spec Code:
+                    at eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\integration\2_Expense\01_Expense%20Type.js:175:31)
+                    at itCallback (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\support\index.js:356:3)
+                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\support\index.js:380:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

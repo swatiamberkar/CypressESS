@@ -1,0 +1,19 @@
+
+
+  {
+    "managerID": "GT10",
+    "employeeID1": "GT11",
+    "employeeID2": "GT12",
+    "project1": "PR-10",
+    "project2": "PR-11",
+    "project3": "PR-12",
+    "task1" : "Task-10",
+    "task2" : "Task-11",
+    "task3" : "Task-12",
+    "clientCode1": "C10",
+    "clientName1" : "Client-10",
+    "clientCode2" : "C11",
+    "clientName2" : "Client-11",
+    "clientCode3" : "C12",
+    "clientName3" : "Client-12"
+  }

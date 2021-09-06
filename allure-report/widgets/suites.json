@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "4934043ca77f5e19110a22e98560e467",
+    "name" : "Expense Type Verify Save Functionality",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "3c2e6d4e431fdbe43b1594c0299fbc53",
+    "name" : "Expense Type Verify Update Functionality",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "1b5a856e4da9a8f03bffd950e13ee76a",
+    "name" : "Expense Type Verify Delete Functionality",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "b73dd979beea4242ae9b6d70dc0efecb",
+    "name" : "Expense Type Verify Validations",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 1,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "9d92d24b68acc2282cbad1c1251a13d7",
+    "name" : "Expense Type",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

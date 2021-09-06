@@ -1,0 +1,56 @@
+{
+  "uid" : "20e1f3a02b10266d",
+  "name" : "Verify Validation - Select Buisness Unit.",
+  "fullName" : "Expense Type Verify Validations.Verify Validation - Select Buisness Unit.",
+  "historyId" : "e8380f77544a4a81207549af6e2b78bd",
+  "time" : {
+    "start" : 1629358488292,
+    "stop" : 1629358488292,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Validation - Select Buisness Unit."
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cfa23109bd409a9a",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1629358488292,
+        "stop" : 0,
+        "duration" : -1629358488292
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20e1f3a02b10266d.json",
+  "parameterValues" : [ ]
+}

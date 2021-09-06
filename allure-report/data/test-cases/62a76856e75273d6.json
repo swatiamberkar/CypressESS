@@ -1,0 +1,46 @@
+{
+  "uid" : "62a76856e75273d6",
+  "name" : "Navigate Expense Type",
+  "fullName" : "Expense Type.Navigate Expense Type",
+  "historyId" : "a1ff4e2d75c2b675db8a3f398d003dbb",
+  "time" : {
+    "start" : 1629358479901,
+    "stop" : 1629358488264,
+    "duration" : 8363
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type"
+  }, {
+    "name" : "testMethod",
+    "value" : "Navigate Expense Type"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "62a76856e75273d6.json",
+  "parameterValues" : [ ]
+}

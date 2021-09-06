@@ -1,0 +1,52 @@
+{
+  "uid" : "19c010afea9a7c36",
+  "name" : "Verify Deleted Expense Type details",
+  "fullName" : "Expense Type Verify Delete Functionality.Verify Deleted Expense Type details",
+  "historyId" : "477086da3ea4ed7a9ec3e8d45fa1e3e1",
+  "time" : {
+    "start" : 1629358548574,
+    "stop" : 1629358553178,
+    "duration" : 4604
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:278:12)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Deleted Expense Type details"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Delete Functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "19c010afea9a7c36.json",
+  "parameterValues" : [ ]
+}

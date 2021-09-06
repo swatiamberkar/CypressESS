@@ -1,0 +1,133 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Timed out retrying after 4000ms: expected '[ <div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'",
+      "children" : [ {
+        "name" : "Verify Validation - Enter Expense Type",
+        "uid" : "3f8e7fb3e48ed0f7",
+        "parentUid" : "61673f06318f861e4ca430493af35695",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358489030,
+          "stop" : 1629358494793,
+          "duration" : 5763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "61673f06318f861e4ca430493af35695"
+    }, {
+      "name" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+      "children" : [ {
+        "name" : "Add Expense Type ",
+        "uid" : "5654d10806bcbdfa",
+        "parentUid" : "b11f22f040c9454b68c372accbac28f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358500065,
+          "stop" : 1629358508488,
+          "duration" : 8423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Update Expense Type",
+        "uid" : "91c5304f838da4f6",
+        "parentUid" : "b11f22f040c9454b68c372accbac28f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358518703,
+          "stop" : 1629358530149,
+          "duration" : 11446
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete Expense Type",
+        "uid" : "93ea857ce5de29c4",
+        "parentUid" : "b11f22f040c9454b68c372accbac28f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358540972,
+          "stop" : 1629358548571,
+          "duration" : 7599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b11f22f040c9454b68c372accbac28f3"
+    }, {
+      "name" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+      "children" : [ {
+        "name" : "Verify Added Expense Type details",
+        "uid" : "41b73b73c3d44bb5",
+        "parentUid" : "d3d89ae784f76d318ebd364ca386f847",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358508491,
+          "stop" : 1629358518591,
+          "duration" : 10100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Updated Expense Type details",
+        "uid" : "31194e3968712caa",
+        "parentUid" : "d3d89ae784f76d318ebd364ca386f847",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358530153,
+          "stop" : 1629358540308,
+          "duration" : 10155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Deleted Expense Type details",
+        "uid" : "19c010afea9a7c36",
+        "parentUid" : "d3d89ae784f76d318ebd364ca386f847",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629358548574,
+          "stop" : 1629358553178,
+          "duration" : 4604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d3d89ae784f76d318ebd364ca386f847"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:\n                \n                `<input type=\"text\" id=\"categoryName\" required=\"\" class=\"form-control form-control-sm\" onblur=\"checkEXpenseTypeNew()\" maxlength=\"50\">`\n                \n                This element `<input#categoryName.form-control.form-control-sm>` is not visible because its parent `<div#DepartmentModal.modal>` has CSS property: `display: none`\n                \n                Fix this problem, or use `{force: true}` to disable error checking.\n                \n                https://on.cypress.io/element-cannot-be-interacted-with",
+      "children" : [ {
+        "name" : "Verify Validation  - Expense Type Already Exists",
+        "uid" : "f577c3377f69ee30",
+        "parentUid" : "e02ab9386a2159af5468e98c69faa61c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629358494796,
+          "stop" : 1629358499895,
+          "duration" : 5099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e02ab9386a2159af5468e98c69faa61c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

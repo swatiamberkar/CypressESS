@@ -1,0 +1,46 @@
+{
+  "uid" : "4c66459c397c7d67",
+  "name" : "Login into Pocket HRMS",
+  "fullName" : "Expense Type.Login into Pocket HRMS",
+  "historyId" : "718016957242aaa32385cec12db92459",
+  "time" : {
+    "start" : 1629358462138,
+    "stop" : 1629358479899,
+    "duration" : 17761
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login into Pocket HRMS"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c66459c397c7d67.json",
+  "parameterValues" : [ ]
+}

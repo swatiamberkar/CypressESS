@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629358462138' stop='1629358553341'>
+    <name>Expense Type</name>
+    <title>Expense Type</title>
+    <test-cases>
+        <test-case start='1629358462138' status='passed' stop='1629358479899'>
+            <name>Login into Pocket HRMS</name>
+            <title>Login into Pocket HRMS</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629358479901' status='passed' stop='1629358488264'>
+            <name>Navigate Expense Type</name>
+            <title>Navigate Expense Type</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

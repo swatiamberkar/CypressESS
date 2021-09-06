@@ -1,0 +1,46 @@
+{
+  "uid" : "39ccf0c8ae576581",
+  "name" : "Verify Validation - Select Buisness Value.",
+  "fullName" : "Expense Type Verify Validations.Verify Validation - Select Buisness Value.",
+  "historyId" : "ffd458c7d88baba534a572cce9db09d9",
+  "time" : {
+    "start" : 1629358488293,
+    "stop" : 1629358489028,
+    "duration" : 735
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Validation - Select Buisness Value."
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39ccf0c8ae576581.json",
+  "parameterValues" : [ ]
+}

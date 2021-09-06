@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629358540972' stop='1629358553330'>
+    <name>Expense Type Verify Delete Functionality</name>
+    <title>Expense Type Verify Delete Functionality</title>
+    <test-cases>
+        <test-case start='1629358540972' status='failed' stop='1629358548571'>
+            <name>Delete Expense Type</name>
+            <title>Delete Expense Type</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.
+                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\integration\2_Expense\01_Expense%20Type.js:270:34)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629358548574' status='failed' stop='1629358553178'>
+            <name>Verify Deleted Expense Type details</name>
+            <title>Verify Deleted Expense Type details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `[title="Buisness Type"]`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `[title="Buisness Type"]`, but never found it.
+                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\integration\2_Expense\01_Expense%20Type.js:278:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

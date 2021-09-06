@@ -1,0 +1,52 @@
+{
+  "uid" : "91c5304f838da4f6",
+  "name" : "Update Expense Type",
+  "fullName" : "Expense Type Verify Update Functionality.Update Expense Type",
+  "historyId" : "9cb25da617ea74bb8b5b1533375d91f8",
+  "time" : {
+    "start" : 1629358518703,
+    "stop" : 1629358530149,
+    "duration" : 11446
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:244:34)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Update Functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Update Functionality"
+  }, {
+    "name" : "testMethod",
+    "value" : "Update Expense Type"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Update Functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "91c5304f838da4f6.json",
+  "parameterValues" : [ ]
+}

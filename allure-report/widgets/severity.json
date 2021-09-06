@@ -1,0 +1,121 @@
+[ {
+  "uid" : "19c010afea9a7c36",
+  "name" : "Verify Deleted Expense Type details",
+  "time" : {
+    "start" : 1629358548574,
+    "stop" : 1629358553178,
+    "duration" : 4604
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "62a76856e75273d6",
+  "name" : "Navigate Expense Type",
+  "time" : {
+    "start" : 1629358479901,
+    "stop" : 1629358488264,
+    "duration" : 8363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91c5304f838da4f6",
+  "name" : "Update Expense Type",
+  "time" : {
+    "start" : 1629358518703,
+    "stop" : 1629358530149,
+    "duration" : 11446
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f577c3377f69ee30",
+  "name" : "Verify Validation  - Expense Type Already Exists",
+  "time" : {
+    "start" : 1629358494796,
+    "stop" : 1629358499895,
+    "duration" : 5099
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5654d10806bcbdfa",
+  "name" : "Add Expense Type ",
+  "time" : {
+    "start" : 1629358500065,
+    "stop" : 1629358508488,
+    "duration" : 8423
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f8e7fb3e48ed0f7",
+  "name" : "Verify Validation - Enter Expense Type",
+  "time" : {
+    "start" : 1629358489030,
+    "stop" : 1629358494793,
+    "duration" : 5763
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "20e1f3a02b10266d",
+  "name" : "Verify Validation - Select Buisness Unit.",
+  "time" : {
+    "start" : 1629358488292,
+    "stop" : 1629358488292,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "31194e3968712caa",
+  "name" : "Verify Updated Expense Type details",
+  "time" : {
+    "start" : 1629358530153,
+    "stop" : 1629358540308,
+    "duration" : 10155
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "93ea857ce5de29c4",
+  "name" : "Delete Expense Type",
+  "time" : {
+    "start" : 1629358540972,
+    "stop" : 1629358548571,
+    "duration" : 7599
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "39ccf0c8ae576581",
+  "name" : "Verify Validation - Select Buisness Value.",
+  "time" : {
+    "start" : 1629358488293,
+    "stop" : 1629358489028,
+    "duration" : 735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c66459c397c7d67",
+  "name" : "Login into Pocket HRMS",
+  "time" : {
+    "start" : 1629358462138,
+    "stop" : 1629358479899,
+    "duration" : 17761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41b73b73c3d44bb5",
+  "name" : "Verify Added Expense Type details",
+  "time" : {
+    "start" : 1629358508491,
+    "stop" : 1629358518591,
+    "duration" : 10100
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

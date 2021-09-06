@@ -1,0 +1,52 @@
+{
+  "uid" : "f577c3377f69ee30",
+  "name" : "Verify Validation  - Expense Type Already Exists",
+  "fullName" : "Expense Type Verify Validations.Verify Validation  - Expense Type Already Exists",
+  "historyId" : "5ebcf71f9f93e7201b10c15a76d0a53f",
+  "time" : {
+    "start" : 1629358494796,
+    "stop" : 1629358499895,
+    "duration" : 5099
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:\n                \n                `<input type=\"text\" id=\"categoryName\" required=\"\" class=\"form-control form-control-sm\" onblur=\"checkEXpenseTypeNew()\" maxlength=\"50\">`\n                \n                This element `<input#categoryName.form-control.form-control-sm>` is not visible because its parent `<div#DepartmentModal.modal>` has CSS property: `display: none`\n                \n                Fix this problem, or use `{force: true}` to disable error checking.\n                \n                https://on.cypress.io/element-cannot-be-interacted-with",
+  "statusTrace" : "CypressError: Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:\n                \n                `<input type=\"text\" id=\"categoryName\" required=\"\" class=\"form-control form-control-sm\" onblur=\"checkEXpenseTypeNew()\" maxlength=\"50\">`\n                \n                This element `<input#categoryName.form-control.form-control-sm>` is not visible because its parent `<div#DepartmentModal.modal>` has CSS property: `display: none`\n                \n                Fix this problem, or use `{force: true}` to disable error checking.\n                \n                https://on.cypress.io/element-cannot-be-interacted-with\n                    at $Cy.ensureVisibility (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:148405:24)\n                    at runAllChecks (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:136083:14)\n                    at retryActionability (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:136137:16)\n                    at tryCatcher (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:13212:23)\n                    at Function.Promise.attempt.Promise.try (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:10486:29)\n                    at tryFn (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:153198:21)\n                    at whenStable (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:153236:12)\n                    at https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:152728:16\n                    at tryCatcher (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:13212:23)\n                    at Promise._settlePromiseFromHandler (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11147:31)\n                    at Promise._settlePromise (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11204:18)\n                    at Promise._settlePromise0 (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11249:10)\n                    at Promise._settlePromises (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11329:18)\n                    at Promise._fulfill (https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:11273:18)\n                    at https://pockethrmsnext.azurewebsites.net/__cypress/runner/cypress_runner.js:12887:46\n                From Your Spec Code:\n                    at eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:175:31)\n                    at itCallback (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:356:3)\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:380:32)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Validation  - Expense Type Already Exists"
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Validations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f577c3377f69ee30.json",
+  "parameterValues" : [ ]
+}

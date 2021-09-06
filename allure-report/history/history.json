@@ -1,0 +1,239 @@
+{
+  "9cb25da617ea74bb8b5b1533375d91f8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91c5304f838da4f6",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+      "time" : {
+        "start" : 1629358518703,
+        "stop" : 1629358530149,
+        "duration" : 11446
+      }
+    } ]
+  },
+  "a1ff4e2d75c2b675db8a3f398d003dbb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "62a76856e75273d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629358479901,
+        "stop" : 1629358488264,
+        "duration" : 8363
+      }
+    } ]
+  },
+  "718016957242aaa32385cec12db92459" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c66459c397c7d67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629358462138,
+        "stop" : 1629358479899,
+        "duration" : 17761
+      }
+    } ]
+  },
+  "26ab8ba897c87abba4b3a1a1cbed1a8a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93ea857ce5de29c4",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+      "time" : {
+        "start" : 1629358540972,
+        "stop" : 1629358548571,
+        "duration" : 7599
+      }
+    } ]
+  },
+  "e8380f77544a4a81207549af6e2b78bd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "20e1f3a02b10266d",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1629358488292,
+        "stop" : 1629358488292,
+        "duration" : 0
+      }
+    } ]
+  },
+  "ffd458c7d88baba534a572cce9db09d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "39ccf0c8ae576581",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629358488293,
+        "stop" : 1629358489028,
+        "duration" : 735
+      }
+    } ]
+  },
+  "f39534fe44438efb2a3922335cfbc4f8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5654d10806bcbdfa",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+      "time" : {
+        "start" : 1629358500065,
+        "stop" : 1629358508488,
+        "duration" : 8423
+      }
+    } ]
+  },
+  "c3d055ef6bdd0338d29891c2e80dba2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "31194e3968712caa",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+      "time" : {
+        "start" : 1629358530153,
+        "stop" : 1629358540308,
+        "duration" : 10155
+      }
+    } ]
+  },
+  "61ea07e0a276489bff4093866ea5c387" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f8e7fb3e48ed0f7",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '[ <div.toast-message>, 2 more... ]' to contain 'Record Saved Successfully'",
+      "time" : {
+        "start" : 1629358489030,
+        "stop" : 1629358494793,
+        "duration" : 5763
+      }
+    } ]
+  },
+  "477086da3ea4ed7a9ec3e8d45fa1e3e1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19c010afea9a7c36",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+      "time" : {
+        "start" : 1629358548574,
+        "stop" : 1629358553178,
+        "duration" : 4604
+      }
+    } ]
+  },
+  "5ebcf71f9f93e7201b10c15a76d0a53f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f577c3377f69ee30",
+      "status" : "broken",
+      "statusDetails" : "Timed out retrying after 4000ms: `cy.clear()` failed because this element is not visible:\n                \n                `<input type=\"text\" id=\"categoryName\" required=\"\" class=\"form-control form-control-sm\" onblur=\"checkEXpenseTypeNew()\" maxlength=\"50\">`\n                \n                This element `<input#categoryName.form-control.form-control-sm>` is not visible because its parent `<div#DepartmentModal.modal>` has CSS property: `display: none`\n                \n                Fix this problem, or use `{force: true}` to disable error checking.\n                \n                https://on.cypress.io/element-cannot-be-interacted-with",
+      "time" : {
+        "start" : 1629358494796,
+        "stop" : 1629358499895,
+        "duration" : 5099
+      }
+    } ]
+  },
+  "96dce8c40603e3b5de6b1ac65eab49a4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "41b73b73c3d44bb5",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `[title=\"Buisness Type\"]`, but never found it.",
+      "time" : {
+        "start" : 1629358508491,
+        "stop" : 1629358518591,
+        "duration" : 10100
+      }
+    } ]
+  }
+}

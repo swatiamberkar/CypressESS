@@ -1,0 +1,52 @@
+{
+  "uid" : "5654d10806bcbdfa",
+  "name" : "Add Expense Type ",
+  "fullName" : "Expense Type Verify Save Functionality.Add Expense Type ",
+  "historyId" : "f39534fe44438efb2a3922335cfbc4f8",
+  "time" : {
+    "start" : 1629358500065,
+    "stop" : 1629358508488,
+    "duration" : 8423
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.toast-message`, but never found it.\n                    at eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\integration\\2_Expense\\01_Expense%20Type.js:200:32)\n                    at itCallback (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:356:3)\n                    at Context.eval (https://pockethrmsnext.azurewebsites.net/__cypress/tests?p=cypress\\support\\index.js:380:32)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "testClass",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "testMethod",
+    "value" : "Add Expense Type "
+  }, {
+    "name" : "package",
+    "value" : "Expense Type Verify Save Functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5654d10806bcbdfa.json",
+  "parameterValues" : [ ]
+}
