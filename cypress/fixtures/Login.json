@@ -1,0 +1,31 @@
+
+
+[	
+
+	
+     {   "CompanyCode"			:	"CT",
+		"EmployeeCode"          :   "C001",
+		"Password"				:	"C001"
+    },
+
+	{   "CompanyCode"			:	"CT",
+		"EmployeeCode"          :   "C002",
+		"Password"				:	"C002"
+    },
+
+	{   "CompanyCode"			:	"CT",
+		"EmployeeCode"          :   "C003",
+		"Password"				:	"C003"
+    },
+
+	{   "CompanyCode"			:	"CT",
+		"EmployeeCode"          :   "C004",
+		"Password"				:	"C004"
+    },
+	
+	{   "CompanyCode"			:	"CT",
+		"EmployeeCode"          :   "C005",
+		"Password"				:	"C005"
+    }	
+	
+]
