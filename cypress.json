@@ -8,6 +8,15 @@
   "chromeWebSecurity": false,
   "downloadsFolder": "cypress/downloads",
 
+  "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/reports",
+      "reportFilename": "report",
+      "overwrite": false,
+      "html": true,
+      "json": true,
+      "charts": true
+    },
   "env": {
     "_cloudUrl": "https://cloud.pockethrms.com/",
     "cloudUrl": "https://pockethrmsnext.azurewebsites.net/",

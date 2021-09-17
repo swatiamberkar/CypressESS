@@ -21,8 +21,6 @@
     "allure:run": "npm run cy:allure && npm run report:allure",
     "allure:open": "allure open allure-report",
     "allure:generate": "allure generate allure-results"
-
-
   },
   "author": "",
   "license": "ISC",
@@ -39,7 +37,7 @@
     "jdk": "0.0.0",
     "mocha": "^8.2.1",
     "mocha-allure-reporter": "^1.4.0",
-    "mochawesome": "^6.2.1",
+    "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "node-xlsx": "^0.16.1"
   },
