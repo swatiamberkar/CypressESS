@@ -21,7 +21,7 @@
     "allure:run": "npm run cy:allure && npm run report:allure",
     "allure:open": "allure open allure-report",
     "allure:generate": "allure generate allure-results",
-    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/output.json",
+    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/index.json",
     "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
     "final_report": "npm run merge && npm run generate_mochawesome_report",
     "test:chrome": "cypress run --browser chrome",
