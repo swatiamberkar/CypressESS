@@ -14,19 +14,23 @@ on:
 jobs:
   cypress-test:
     name: Run on Chrome 83
-    runs-on: ubuntu-18.04
-    container: cypress/browsers:node12.18.0-chrome83-ff77
+    runs-on: windows-latest
+   
     steps:
       - uses: actions/checkout@v2
-
+      - name: Set up JDK 11 for x64
+        uses: actions/setup-java@v2
+        with:
+            java-version: '11'
+            distribution: 'adopt'
+            architecture: x64
+            
       - name: Install cypress and verify
         run: |
-          npm i cypress
-      
-        
-          $(npm bin)/cypress verify
+          npm i cypress 
+          
       - name: Run Cypress tests
-        run: npm run test:chrome
+        run: npm run cy:allure
         continue-on-error: true
 
       - name: Copy test execution videos and screenshots
@@ -35,10 +39,11 @@ jobs:
           cp -r cypress/videos public/videos
           cp -r cypress/screenshots public/screenshots
       - name: Merge test reports
-        run: npm run merge
+        run: npm run report:allure
 
-      - name: Generate HTML report
-        run: npm run generate:report
+      - name: Generate Allure report
+        run: npm run allure:open
+       
       
       - name: Deploy report page to GitHub Page
         uses: peaceiris/actions-gh-pages@v3
