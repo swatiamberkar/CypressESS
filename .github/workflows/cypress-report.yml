@@ -17,22 +17,18 @@ jobs:
     runs-on: ubuntu-18.04
     container: cypress/browsers:node12.18.0-chrome83-ff77
     steps:
-    
       - uses: actions/checkout@v2
-
+      - name: Set up JDK 11 for x64
+        uses: actions/setup-java@v2
+        with:
+            java-version: '11'
+            distribution: 'adopt'
+            architecture: x64
+            
       - name: Install cypress and verify
         run: |
-          npm i cypress
-      
-        
+          npm i cypress 
           $(npm bin)/cypress verify
-        
-     - name: Set up JDK 11 for x64
-       uses: actions/setup-java@v2
-        with:
-          java-version: '11'  
-          distribution: 'adopt'
-          architecture: x64 
       
       - name: Run Cypress tests
         run: npm run cy:allure
