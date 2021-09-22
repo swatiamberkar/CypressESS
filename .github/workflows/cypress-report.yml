@@ -26,7 +26,7 @@ jobs:
         
           $(npm bin)/cypress verify
       - name: Run Cypress tests
-        run: npm run test:chrome
+        run: npm run cy:allure
         continue-on-error: true
 
       - name: Copy test execution videos and screenshots
@@ -37,8 +37,9 @@ jobs:
       - name: Merge test reports
         run: npm run merge
 
-      - name: Generate HTML report
-        run: npm run generate:report
+      - name: Generate Allure report
+        run: npm run allure:generate
+       
       
       - name: Deploy report page to GitHub Page
         uses: peaceiris/actions-gh-pages@v3
