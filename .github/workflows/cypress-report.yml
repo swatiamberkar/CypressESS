@@ -28,8 +28,7 @@ jobs:
       - name: Install cypress and verify
         run: |
           npm i cypress 
-          $(npm bin)/cypress verify
-      
+          
       - name: Run Cypress tests
         run: npm run cy:allure
         continue-on-error: true
