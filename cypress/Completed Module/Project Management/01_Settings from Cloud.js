@@ -1,55 +1,35 @@
 
-describe('01_Employee Import', function () {
+describe('01_Settings from Cloud', function () {
 	// Update emp code in excel import
-	// Same Emp & Projects name update in Timesheet Json
+	// Same Emp & Projects name update in all page of PM
 	// Delete Allure report before running
 
 	const { softAssert, softExpect } = chai;
-	var moment = require('moment');
-	const Day = moment().format('DD')
+	const Day = Cypress.moment().format('DD')
 	const Day1 = parseInt(Day)+1
 	const Day2 = parseInt(Day)-1
-	const Month = moment().format('MM')
-	const year = moment().format('YYYY')
-	const yasterdayDate = moment().subtract(1, "days").format("DD/MM/YYYY");
+	const Month = Cypress.moment().format('MM')
+	const year = Cypress.moment().format('YYYY')
+	const yasterdayDate = Cypress.moment().subtract(1, "days").format("DD/MM/YYYY");
 	const currentDate = Day+'/'+Month+'/'+year
 	const tomorrowDate = Day1+'/'+Month+'/'+year
 	
-	var managerID = ''
-	var employeeID1 = ''
-	var employeeID2 = ''
+	var managerID = 'P13'
+	var managerName = 'Timesheet Manager'
+	var employeeID1 = 'P14'
+	var employeeName1 = 'Timesheet User1'
+	var employeeID2 = 'P15'
+	var employeeName2 = 'Timesheet User2'
 
-	var project1 = ''
-	var project2 = ''
-	var project3 = ''
+	var project = 'Project-27'
+	var project1 = 'Project-28'
+	var project2 = 'Project-29'
 
-	var task1 = ''
-	var task2 = ''
-	var task3 = ''
+	var task = 'Task-1'
+	var task2 = 'Task-2'
 		
 	var filePath = 'EmployeeImport.xlsx'
-	var sheetName = 'Timesheet'
-	var settingName = 'TimesheetEmployeeimport' 
-	var manager = 'C001'
-
-	before(function () {
-		
-		cy.fixture('TestData/Timesheet').then(this, function (data) {
-			this.data = data
-			 managerID = this.data.managerID
-			 employeeID1 = this.data.employeeID1
-			 employeeID2 = this.data.employeeID2
-
-			 project1 = this.data.project1
-			 project2 = this.data.project2
-			 project3 = this.data.project3
-
-			 task1 = this.data.task1
-			 task2 = this.data.task2
-			 task3 = this.data.task3
-		})
-	})
-
+	var sheetName = 'Project'
 		
 	beforeEach(function(){
         cy.getCookies()
@@ -112,7 +92,7 @@ describe('01_Employee Import', function () {
 		cy.wait(2000)
 		cy.get('button[onclick="showNewMasterSetting()"]').click({ force: true })
 		cy.wait(5000)
-		cy.get('#MasterSettingNameNew').type(settingName)
+		cy.get('#MasterSettingNameNew').type('EssEmployeeimport')
 		cy.wait(1000)
 		cy.get("input[name='name']").click({ force: true })
 
@@ -161,7 +141,7 @@ describe('01_Employee Import', function () {
 		cy.get('#categoryMaster').select('Staff', { force: true })
 
 		cy.wait(2000)
-		cy.get('#MasterSettingName').select(settingName, { force: true })
+		cy.get('#MasterSettingName').select('EssEmployeeimport', { force: true })
 		cy.wait(2000)
 
 		cy.fixture(filePath, 'binary')
@@ -191,25 +171,9 @@ describe('01_Employee Import', function () {
 		cy.wait(15000)
 	})
 
-	it('Login into Pocket ESS', function () {
-		cy.EssLogin(manager, manager)
-	})
-		
-	it('Approve New Employee', function() {	
-			cy.visit(Cypress.env('url')+'/Employee/Profile/EmployeeApprovals?Menu=managerapprove');
-			cy.get('#chkApproveAll').click();
-			cy.xpath("//button[contains(text(),'Save')]").click();
-		})
 
-	it('Login into Pocket Cloud', function () {
-			cy.cloudLogin()
-	
-			cy.changeCompany()
-	
-		})	
-		
 	it('Set Self Service Role - Manager', function () {
-		cy.navigate_EmployeeProfile(managerID)
+		cy.navigate_EmployeeProfile(managerID, managerName)
 		cy.server()
 		cy.get('#Profile_SelfServiceRole').click({ force: true })
 		cy.wait(2000)
@@ -223,7 +187,7 @@ describe('01_Employee Import', function () {
 
 		
 	it('Set Self Service Role - User', function () {
-		cy.navigate_EmployeeProfile(employeeID1)
+		cy.navigate_EmployeeProfile(employeeID1, employeeName1)
 		cy.server()
 		cy.get('#Profile_SelfServiceRole').click({ force: true })
 		cy.wait(2000)
@@ -234,7 +198,7 @@ describe('01_Employee Import', function () {
 		cy.get('[onclick="saveSelfServiceRole(this)"]').click({ force: true })
 		cy.wait(5000)
 
-		cy.navigate_EmployeeProfile(employeeID2)
+		cy.navigate_EmployeeProfile(employeeID2, employeeName2)
 		cy.server()
 		cy.get('#Profile_SelfServiceRole').click({ force: true })
 		cy.wait(2000)
@@ -247,6 +211,7 @@ describe('01_Employee Import', function () {
 	})
 
 	it('Assign manager for Timesheet module', function () {
+		const { softAssert, softExpect } = chai;
 
 		cy.wait(2000)
 		cy.get('#approval_matrix_tab').click({ force: true })
@@ -321,7 +286,6 @@ describe('01_Employee Import', function () {
 	})
 
 	it('Add Punch Details', function () {
-		cy.navigate_EmployeeProfile(employeeID2)
 		cy.get('#attendance_detail_tab').click({ force: true })
 		cy.wait(2000)
 		cy.xpath("//div[@id='attendance_detail']//li[2]").click({ force: true })
@@ -332,8 +296,7 @@ describe('01_Employee Import', function () {
 		cy.wait(15000)
 		cy.apply_InOutCoreDetailsFilter()
 
-		cy.get('#dLabel1 > .fas').click({ force: true })
-		//cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(11)>div>a').click({ force: true })
+		cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(11)>div>a').click({ force: true })
 		cy.wait(1000)
 		cy.xpath("//div[@class='dropdown-menu dropdown-menu-right dropheight show']//a[@class='dropdown-item dropheight'][contains(text(),'Modified Punch')]").click({ force: true })
 		cy.wait(2000)
@@ -366,9 +329,9 @@ describe('01_Employee Import', function () {
 			cy.get(".toast-message").click({ force: true })
 		})
 
-		cy.wait(15000)
-		cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(4)').invoke('text').then((InTime) => {
-			cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(5)').invoke('text').then((OutTime) => {
+
+		cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(3)').invoke('text').then((InTime) => {
+			cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(4)').invoke('text').then((OutTime) => {
 				cy.get('#tblInOutCoreDetail> tbody>tr:nth-child(1)>td:nth-child(2)').invoke('text').then((EntryDate) => {
 					cy.log("EntryDate: " + EntryDate)
 					cy.log("InTime: " + InTime)
@@ -385,7 +348,7 @@ describe('01_Employee Import', function () {
 
 	})
 
-	it('Set Generate Password Setting', function () {
+	it('GeneratePassword ', function () {
 		cy.visit(Cypress.env('cloudUrl') + 'Settings/Employee/Index?module=hr&submodule=GeneratePassword')
 		cy.wait(2000)
 		cy.server()
@@ -445,6 +408,53 @@ describe('01_Employee Import', function () {
 		})
 	})
 */
+	it('Lock Timesheet for Yasterday Date ', function () {
+		cy.get('.dripicons-menu').click({ force: true })
+		cy.get('[data-name="ESSMenus"] > table > tbody > :nth-child(2) > .menu-name-td').click({ force: true })
+		cy.url().should('include', '/Settings/Employee/ESSIndex?module=Profile&submodule=BulletinNews');
+		cy.get('#TimesheetEss_tab').click({ force: true })
+		cy.get('#Timesheet_TimesheetLock').click({ force: true })
+		cy.url().should('include', '/Settings/Employee/ESSIndex?module=Timesheet&submodule=TimesheetLock');
+
+		cy.get('.select2-selection--multiple').click({ force: true })
+		cy.get('input[type="search"]').click({ force: true })
+		cy.get('input[type="search"]').type(employeeID1)
+		cy.get('.select2-results__option--highlighted').click({ force: true })
+
+		cy.get('#StartDate').click({ force: true }).then(input => {
+			input[0].dispatchEvent(new Event('input', { bubbles: true }))
+			input.val(yasterdayDate)
+		})
+
+		cy.get('#EndDate').click({ force: true }).then(input => {
+			input[0].dispatchEvent(new Event('input', { bubbles: true }))
+			input.val(yasterdayDate)
+		})
+		cy.get('#btnLock').click({ force: true })
+		cy.get(".toast-message").should('contain', 'Employees Successfully Locked for Timesheet Entry!')
+
+		cy.get('.select2-selection--multiple').click({ force: true })
+		cy.get('input[type="search"]').click({ force: true })
+		cy.get('input[type="search"]').type(employeeID1)
+		cy.get('.select2-results__option--highlighted').click({ force: true })
+
+		cy.get('#StartDate').click({ force: true }).then(input => {
+			input[0].dispatchEvent(new Event('input', { bubbles: true }))
+			input.val(yasterdayDate)
+		})
+
+		cy.get('#EndDate').click({ force: true }).then(input => {
+			input[0].dispatchEvent(new Event('input', { bubbles: true }))
+			input.val(yasterdayDate)
+		})
+		cy.get('#btnView').click({ force: true })
+
+		cy.xpath("//table[@id='tblEmp']/tbody/tr/td[3]").should('contain', employeeID1)
+		cy.xpath("//table[@id='tblEmp']/tbody/tr/td[6]").should('contain', yasterdayDate)
+		cy.xpath("//table[@id='tblEmp']/tbody/tr/td[7]").should('contain', yasterdayDate)
+		cy.xpath("//table[@id='tblEmp']/tbody/tr/td[8]").should('contain', 'Yes')
+
+	})
 
 
 })

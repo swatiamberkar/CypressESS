@@ -12,8 +12,8 @@ describe('03_Task-Project Mapping', function() {
 	const tomorrowDate = Day1+'/'+Month+'/'+year
 	
 	var managerID = ''
-	var employeeID = ''
-	
+	var employeeID1 = ''
+	var employeeID2 = ''
 
 	var project1 = ''
 	var project2 = ''
@@ -26,10 +26,11 @@ describe('03_Task-Project Mapping', function() {
 		
 	before(function () {
 		
-		cy.fixture('TestData/Timesheet').then(this, function (data) {
+		cy.fixture('Timesheet').then(this, function (data) {
 			this.data = data
 			 managerID = this.data.managerID
-			 employeeID = this.data.employeeID
+			 employeeID1 = this.data.employeeID1
+			 employeeID2 = this.data.employeeID2
 
 			 project1 = this.data.project1
 			 project2 = this.data.project2

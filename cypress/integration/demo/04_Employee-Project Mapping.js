@@ -12,7 +12,8 @@ describe('04_Employee-Project Mapping', function() {
 	const tomorrowDate = Day1+'/'+Month+'/'+year
 	
 	var managerID = ''
-	var employeeID = ''
+	var employeeID1 = ''
+	var employeeID2 = ''
 
 	var project1 = ''
 	var project2 = ''
@@ -28,7 +29,8 @@ describe('04_Employee-Project Mapping', function() {
 		cy.fixture('Timesheet').then(this, function (data) {
 			this.data = data
 			 managerID = this.data.managerID
-			 employeeID = this.data.employeeID
+			 employeeID1 = this.data.employeeID1
+			 employeeID2 = this.data.employeeID2
 
 			 project1 = this.data.project1
 			 project2 = this.data.project2
@@ -70,7 +72,7 @@ describe('04_Employee-Project Mapping', function() {
 	it('Verify Validation - Select Project name', function () {
 		cy.get('#select2-multiEmp-container').click({ force: true })
 		cy.get('input[type="search"]').click({ force: true })
-		cy.get('input[type="search"]').type(employeeID)
+		cy.get('input[type="search"]').type(employeeID1)
 		cy.get('.select2-results__option--highlighted').click({ force: true })
 		cy.wait(500)
 		cy.get('button[value="Save"]').click({ force: true })
