@@ -14,7 +14,7 @@ on:
 jobs:
   cypress-test:
     name: Run on Chrome 83
-    runs-on: window
+    runs-on: ubuntu-18.04
     container: cypress/browsers:node12.18.0-chrome83-ff77
     steps:
       - uses: actions/checkout@v2
