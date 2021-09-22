@@ -14,14 +14,16 @@ on:
 jobs:
   cypress-test:
     name: Run on Chrome 83
-    runs-on: ubuntu-18.04
+    runs-on: window
     container: cypress/browsers:node12.18.0-chrome83-ff77
     steps:
       - uses: actions/checkout@v2
 
       - name: Install cypress and verify
         run: |
-          npm ci
+          npm i cypress
+      
+        
           $(npm bin)/cypress verify
       - name: Run Cypress tests
         run: npm run test:chrome
